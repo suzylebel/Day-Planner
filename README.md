@@ -1,7 +1,7 @@
 # 05 Third-Party APIs: Work Day Scheduler
 
 
-Explore the [Deployed Password Generator](https://suzylebel.github.io/Day-Planner/)
+Explore the [Deployed Day Planner](https://suzylebel.github.io/Day-Planner/)
 View the [Github page](https://github.com/suzylebel/Day-Planner)
 
 ## Table of Contents
