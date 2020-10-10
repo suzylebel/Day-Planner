@@ -1,10 +1,18 @@
 # 05 Third-Party APIs: Work Day Scheduler
 
-## Your Task
 
-Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+Explore the [Deployed Password Generator](https://suzylebel.github.io/Day-Planner/)
+View the [Github page](https://github.com/suzylebel/Day-Planner)
 
-You'll need to use the [Moment.js](https://momentjs.com/) library to work with date and time. Be sure to read the documentation carefully and concentrate on using Moment.js in the browser.
+## Table of Contents
+1. [User story](#User-story)
+2. [About the Project](#About-the-Project)
+3. [Tech/Framework used](#Tech-Used)
+4. [Code Breakdown](Code-Breakdown)
+5. [UI // Things to update](#UI)
+6. [License](#License)
+7. [Contact](#Contact)
+8. [Credits](#Credit)
 
 
 ## User Story
@@ -15,81 +23,56 @@ I WANT to add important events to a daily planner
 SO THAT I can manage my time effectively
 ```
 
+## About the Project
 
-## Acceptance Criteria
-
-```
-GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
-WHEN I scroll down
-THEN I am presented with time blocks for standard business hours
-WHEN I view the time blocks for that day
-THEN each time block is color-coded to indicate whether it is in the past, present, or future
-WHEN I click into a time block
-THEN I can enter an event
-WHEN I click the save button for that time block
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist
-```
+The goal of this project was to edit files that were already given to us and use JQuery to create a functioning Day planner for our user to use. Using moment.js we were also able to color code the planner based on the users current time to show past, present and future! Local storage was also used so the users Planner is saved!
 
 
-## Mock-Up
+## Tech Used
+The index.html and style.css were provided to start.
+I created functions in JS using JQuery libraries.  
 
-The following animation demonstrates the application functionality:
+## Code Breakdown
 
-![day planner demo](./Assets/05-third-party-apis-homework-demo.gif)
+I took the approach to create an array and loop that array into my code: 
 
+``` // create array
+        var timeBlocks = [
+            {
+                id: "0",
+                hour: "09",
+                time: "09",
+                meridiem: "am",
+                reminder: "",
+            },
+            {
+                id: "1",
+                hour: "10",
+                time: "10",
+                meridiem: "am",
+                reminder: "",
+                
+ ```
+ I also used JQuery to create me elements and append it to the DOM!
 
-## Grading Requirements
+## UI
+I decided to give it a bit of a color lift so the user could feel cool about their day planner. 
 
-This homework is graded based on the following criteria: 
+## Contribute
+If you’d like to fork this project from github please feel free! With a pull request I can grant you access to leave comments and notes about this project. 
 
-### Technical Acceptance Criteria: 40%
+## License 
+None
+ 
+## Contact 
 
-* Satisfies all of the above acceptance criteria plus the following:
+Suzy Le Bel 
+suzy.lebel@gmail.com
 
-  * Uses the Moment.js library to work with date and time
+Project Link can be found [here.](https://suzylebel.github.io/Day-Planner/)
 
-### Deployment: 32%
-
-* Application deployed at live URL
-
-* Application loads with no errors
-
-* Application GitHub URL submitted
-
-* GitHub repo contains application code
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate
-
-* Application user interface style is clean and polished
-
-* Application resembles the mock-up functionality provided in the homework instructions
-
-### Repository Quality: 13%
-
-* Repository has a unique name
-
-* Repository follows best practices for file structure and naming conventions
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages
-
-* Repository contains quality README file with description, screenshot, and link to deployed application
+## Credit
+Assistance from Amanda Crawford (BCS Tutor). 
 
 
-## Review
 
-You are required to submit BOTH of the following for review:
-
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-
-- - -
-© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
