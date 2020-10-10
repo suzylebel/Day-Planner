@@ -55,6 +55,15 @@ I took the approach to create an array and loop that array into my code:
  ```
  I also used JQuery to create me elements and append it to the DOM!
 
+
+This is also the first time learning moment().format to display the current time and day to the users landing page. 
+
+```
+ function headerDate() {
+            var currentHeader = moment().format('dddd, MMMM Do, h:mm a');
+            $("#currentDay").text(currentHeader);
+        }
+```
 ## UI
 I decided to give it a bit of a color lift so the user could feel cool about their day planner. 
 
